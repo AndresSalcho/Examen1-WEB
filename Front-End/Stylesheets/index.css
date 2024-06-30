@@ -1,0 +1,188 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237,237,237);
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background-color: rgb(18,31,76);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10pt;
+    cursor: pointer;
+}
+
+img.qLogo{
+    margin-top: 6pt;
+    width: 24pt;
+    margin-right: 20pt;
+
+}
+
+p.title{
+    margin-left: 50pt;
+    font-weight: bold;
+}
+
+p.LBar{
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    background-color: rgb(18,31,76);
+    padding-left: 60pt;
+    padding-right: 60pt;
+    padding-top: 15pt;
+    padding-bottom: 15pt;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+div.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.left{
+    background-color: rgb(18,31,76);
+    min-height: 100vh;
+}
+
+div.right{
+    background-color: white;
+    height: min-content;
+    width: 100%;
+    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.5), 0px -1px 4px -2px rgba(0, 0, 0, 0.5);
+
+}
+
+table.main{
+    display: flex;
+    justify-content: center;
+    border-width: 1px;
+    border-spacing: 0px;
+    margin: 0;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th.head{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+td.dato{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center
+}
+
+div.up{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10pt;
+}
+
+
+#current{
+    color: rgb(18,31,76);
+    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.5), 0px -1px 4px -2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    font-weight: bold;
+}
+
+img.img2{
+    width: 15pt;
+}
+
+button.btn2{
+    background: none;
+    margin-left: 85%;
+}
+
+form.hide{
+    display: none;
+}
+
+div.hide{
+    display: none;
+}
+
+button.btnenv{
+    width: 100%;
+}
+
+div.show{
+    display: block;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+    min-height: 100vh;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+form.show{
+    display: grid;
+    position: absolute;
+    place-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15pt;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: min-content;
+    height: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+@media screen and (max-width: 1000px) {
+    div.main{
+        display: block;
+    }
+    div.left{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(18,31,76);
+        min-height: auto;
+    }
+    a{
+        padding: 0;
+        font-size: small;
+    }
+    table.main{
+        font-size: small;
+    }
+    p.LBar{
+        font-size: small;
+    }
+    
+
+}
