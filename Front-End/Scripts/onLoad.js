@@ -27,10 +27,7 @@ document.getElementById('form1').addEventListener('submit', function(event) {
             }
         })
         .catch(error => console.error('Error:', error));
-    } else {
-        alert('No es una info valida');
-    }
-
+    } 
 });
 
 document.addEventListener('DOMContentLoaded', function() {
